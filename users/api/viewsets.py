@@ -4,5 +4,4 @@ from users import models
 
 class UsersViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.UsersSerializer
-    queryset =  models.users.objects.all()
-   
+    queryset =  models.Users.objects.all()

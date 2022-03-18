@@ -3,5 +3,5 @@ from users import models
 
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.users
+        model = models.Users
         fields = '__all__'
