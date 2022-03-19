@@ -16,16 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
 from rest_framework import routers
 from users.api import viewsets as usersviewsets
-
 
 route = routers.DefaultRouter()
 
 route.register(r'users', usersviewsets.UsersViewSet, basename="Users")
+#route.register(r'users/create/', usersviewsets.UsersViewCreate, basename="Create User")
+#route.register(r'create', usersviewsets.UsersViewCreate.as_view(), basename="Create")
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/create/', usersviewsets.UsersViewCreate.as_view({'post': 'create'}), name="Create"),
     path('', include(route.urls))
 ]
