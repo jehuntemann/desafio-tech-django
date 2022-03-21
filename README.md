@@ -9,6 +9,7 @@ Construir pelo menos dois endpoints utilizando Django:
 
 ## Dependencies
 Python 3.9.11
+
 python venv
 
 ## Start Project
