@@ -10,3 +10,4 @@ class UsersViewSet(viewsets.ModelViewSet):
 class UsersViewCreate(viewsets.ModelViewSet):
     serializer_class = serializers.UsersSerializer
     http_method_names = ["post"]
+    

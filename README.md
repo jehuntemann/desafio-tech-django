@@ -1,6 +1,15 @@
 # desafio-tech-django
 
-Python version = 3.9.11
+Desafio Tech (Automação)
+
+Construir pelo menos dois endpoints utilizando Django:
+  - Cadastrar usuário, fornecendo o login, senha e data de nascimento
+  - Senha deixar como opcional, se não fornecido gerar uma senha aleatória.
+  - Consultar usuários cadastrados.
+
+## Dependencies
+Python 3.9.11
+python venv
 
 ## Start Project
 ```

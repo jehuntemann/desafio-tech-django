@@ -22,9 +22,6 @@ from users.api import viewsets as usersviewsets
 route = routers.DefaultRouter()
 
 route.register(r'users', usersviewsets.UsersViewSet, basename="Users")
-#route.register(r'users/create/', usersviewsets.UsersViewCreate, basename="Create User")
-#route.register(r'create', usersviewsets.UsersViewCreate.as_view(), basename="Create")
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
