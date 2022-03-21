@@ -12,7 +12,7 @@ Python 3.9.11
 
 python venv
 
-## Start Project
+## Start Project (windows)
 ```
 python -m venv venv
 .\venv\Scripts\activate.bat
